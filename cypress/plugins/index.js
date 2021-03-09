@@ -47,7 +47,8 @@ function processConfigName(on,config){
 }
 
 function getConfigFile(file){
-  const pathToConfigFile = path.resolve('cypress','config', `${file}.json`)
+  //const pathToConfigFile = path.resolve('cypress','config', `${file}.json`)
+  const pathToConfigFile = path.resolve('cypress','config', `qa.json`)
   return fs.readJson(pathToConfigFile)
 }
 
